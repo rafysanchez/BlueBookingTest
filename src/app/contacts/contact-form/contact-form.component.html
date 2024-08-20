@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+  <div class="card p-4 shadow" style="width: 300px; background-color: #f5f5f5;">
+    <h4 class="card-title text-center mb-4" style="color: #6c757d;">Edit Contact</h4>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name" style="color: #6c757d;">Name</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="contact.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone" style="color: #6c757d;">Phone</label>
+        <input type="text" id="phone" class="form-control" [(ngModel)]="contact.phone" name="phone" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block mt-3" style="background-color: #5f9ea0; border-color: #5f9ea0;">Submit</button>
+    </form>
+  </div>
+</div>
